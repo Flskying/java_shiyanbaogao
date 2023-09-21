@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+    Scanner input =new Scanner(System.in);
+    double n2,n3,sum=0,an;
+    String go;
+    boolean i=true;
+    int n1;
+    while(i){
+        System.out.println("请输入首项的值");
+        n1=input.nextInt();
+        System.out.println("请输入公差的值");
+        n2=input.nextDouble();
+        System.out.println("请输入项数的值");
+        n3=input.nextDouble();
+        an=n1+(n3-1)*n2;
+        sum=n3*(n1+an)/2;
+        System.out.println("该数列前n项和为"+sum);
+
+        System.out.println("是否继续计算？(输入Y或N)");
+        go=input.next();
+        if(!go.equals("Y")){
+           i=false;
+        }
+        else if(go.equals("Y")){
+            continue;
+        }
+        Scanner close;
+    }
+
+    }
+}
